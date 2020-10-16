@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.block1 {
+    height: 100vh;
+    background-color: aqua;
+    margin-bottom: 300px;
+}
+.block2 {
+    height: 100vh;
+    background-color: brown;
+}
+a{
+  
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 100px;
+}
+a::before{
+    content: "\1f32a";
+    font-family: 'icomoon';
+    font-size: 70px;
+    position: relative;
+    left: 0;
+    top: 0;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow{
+    0%{
+        top: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        bottom: 0;
+    }
+}
